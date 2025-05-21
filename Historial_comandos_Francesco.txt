@@ -1,0 +1,47 @@
+cd TP_AYSO/
+LS
+ls
+“ssh-keygen -t ed25519
+cat $HOME/.ssh/*.pub
+ssh-keygen -t ed25519
+cat $HOME/.ssh/*.pub
+cd
+mkdir repogit
+cd repogit
+git clone git@github.com:francescovergara-a/TP_AYSO.git
+cd T
+cd TP_AYSO/
+pwd 
+ls -l
+cat /etc/os-release
+man grep
+grep HOME_URL /etc/os-release
+vagrant halt
+exit
+cd TP_AYSO/
+whoami
+echo "Usuario=$(whoami)">datos_usuario.txt
+git add .
+git config --global user.email "francescogiovanni17@gmail.com"
+git config --global user.name "francescovergara-a"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+git push
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+git status
+git commit -m "feat: Añadiendo informacion de CPU"
+git status
+clear
+cat <<EOF>> README.md
+alumno:Francesco 
+Division: 318 Turno:Noche
+EOF
+
+git add README.md datos_usurios.txt
+git add README.md datos_usurio.txt
+git add README.md datos_usuarios.txt
+git add README.md datos_usuario.txt
+git status
+git commit -m "ADD: Añadiendo Readme y datos de usuario"
+git push
+history -a
